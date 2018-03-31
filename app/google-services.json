@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "549940011762",
+    "firebase_url": "https://intellischeduler-8ec14.firebaseio.com",
+    "project_id": "intellischeduler-8ec14",
+    "storage_bucket": "intellischeduler-8ec14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549940011762:android:f7e2ced0196a042a",
+        "android_client_info": {
+          "package_name": "com.example.android.intellischeduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549940011762-a56b7qpt0dicmmmssgfq5bj4c2eldhvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.intellischeduler",
+            "certificate_hash": "c8d1ab5f7f2e05a62b9648ece6798f6db557e968"
+          }
+        },
+        {
+          "client_id": "549940011762-aqiine4e2v7hdqlasfdd2rqsk904d3ku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT_1h-VMLwX7BG07R8xc13grFDBduIk6Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549940011762-aqiine4e2v7hdqlasfdd2rqsk904d3ku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
