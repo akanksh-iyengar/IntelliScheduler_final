@@ -49,7 +49,7 @@ public class LoginActivity extends AppCompatActivity  implements View.OnClickLis
         if(firebaseAuth.getCurrentUser()!=null){
 
             finish();
-            startActivity(new Intent(this,MainActivity.class));
+            startActivity(new Intent(this,TabWithIconActivity.class));
         }
         //findViewById(R.id.button5).setOnClickListener(this);
     }

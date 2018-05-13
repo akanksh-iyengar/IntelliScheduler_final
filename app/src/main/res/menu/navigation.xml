@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_new"
+        android:icon="@drawable/ic_note_add_black_24dp"
+        android:title="New"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_lulz"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="To do list" />
+        android:title="Home"
+        app:showAsAction="always"/>
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="New entry?" />
+        android:id="@+id/navigation_all"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="All"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/navigation_schedule"
+        android:icon="@drawable/ic_schedule_black_24dp"
+        android:title="Schedule"
+        app:showAsAction="always"/>
+
 
 
 

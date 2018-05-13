@@ -16,15 +16,6 @@
          android:layout_width="match_parent"
          android:layout_height="match_parent">
      </android.support.v7.widget.RecyclerView>
-     <android.support.design.widget.BottomNavigationView
-         android:id="@+id/navigation"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_gravity="bottom"
-         android:background="?android:attr/windowBackground"
-         app:menu="@menu/navigation"
-         tools:layout_editor_absoluteY="33dp"
-         tools:layout_editor_absoluteX="48dp" />
  </FrameLayout>
 
 </LinearLayout>

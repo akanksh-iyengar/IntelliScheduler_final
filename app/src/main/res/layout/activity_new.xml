@@ -11,73 +11,74 @@
     <android.support.constraint.ConstraintLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <EditText
             android:id="@+id/Name"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
             android:ems="10"
             android:hint="Name"
             android:inputType="textPersonName"
-            tools:layout_constraintRight_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/Priority"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/Priority"
+            app:layout_constraintRight_toRightOf="@+id/Priority"
             tools:layout_constraintBottom_creator="1"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintBottom_toTopOf="@+id/Priority"
-            app:layout_constraintRight_toRightOf="@+id/Priority"
-            android:layout_marginBottom="42dp"
-            app:layout_constraintLeft_toLeftOf="@+id/Priority" />
+            tools:layout_constraintRight_creator="1" />
 
         <Button
             android:id="@+id/Reset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reset"
+            android:layout_marginLeft="85dp"
             android:layout_marginStart="85dp"
-            tools:layout_constraintTop_creator="1"
             android:layout_marginTop="17dp"
+            android:text="Reset"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
             tools:layout_constraintLeft_creator="1"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginLeft="85dp" />
+            tools:layout_constraintTop_creator="1" />
 
         <Button
             android:id="@+id/Note_it"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Note it!"
-            tools:layout_constraintTop_creator="1"
-            tools:layout_constraintRight_creator="1"
             android:layout_marginEnd="84dp"
-            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="84dp"
             android:layout_marginTop="17dp"
+            android:text="Note it!"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
-            android:layout_marginRight="84dp" />
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
 
         <EditText
             android:id="@+id/Priority"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
             android:ems="10"
             android:hint="Priority(Scale of 1 to 5)"
             android:inputType="textPersonName"
-            tools:layout_constraintRight_creator="1"
-            tools:layout_constraintBottom_creator="1"
             app:layout_constraintBottom_toTopOf="@+id/Duration"
-            app:layout_constraintRight_toRightOf="@+id/Duration"
-            tools:layout_constraintLeft_creator="1"
-            android:layout_marginBottom="43dp"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="@+id/Duration"
-            app:layout_constraintHorizontal_bias="0.0" />
+            app:layout_constraintRight_toRightOf="@+id/Duration"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
 
         <EditText
             android:id="@+id/Duration"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="88dp"
+            android:layout_marginBottom="245dp"
             android:ems="10"
             android:hint="Duration(in minutes)"
             android:inputType="textPersonName"
@@ -89,14 +90,36 @@
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintRight_creator="1" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:textSize="18dp"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Choose days of the week below"
+            app:layout_constraintTop_toBottomOf="@+id/Duration"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <ListView
+            android:id="@+id/Days_of_the_week"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="53dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Duration"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+
     </android.support.constraint.ConstraintLayout>
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:menu="@menu/navigation" />
 
 </LinearLayout>

@@ -9,10 +9,14 @@ public class ToDoList {
     public String duration;
     public String priority;
     public String tstamp;
-    ToDoList(String taskName,String duration,String priority,String tstamp){
+    public String weekStatus;
+
+    ToDoList(){}
+    ToDoList(String taskName,String duration,String priority,String tstamp,String weekStatus){
         this.taskName=taskName;
         this.duration=duration;
         this.priority=priority;
         this.tstamp=tstamp;
+        this.weekStatus=weekStatus;
     }
 }

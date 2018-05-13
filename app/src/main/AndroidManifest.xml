@@ -12,6 +12,9 @@
         <activity android:name=".MainActivity"
             android:label="@string/app_name">
         </activity>
+        <activity android:name=".TabWithIconActivity"
+            android:label="@string/app_name">
+        </activity>
         <activity android:name=".LoginActivity"
             android:label="@string/app_name">
             <intent-filter>
@@ -23,6 +26,22 @@
         <activity android:name=".SignUpActivity"
             android:label="@string/app_name"></activity>
         <activity android:name=".NewActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".ScheduleDisplay"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".MondayStart"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".TuesdayStart"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".WednesdayStart"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".ThursdayStart"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".FridayStart"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".SaturdayStart"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".SundayStart"
             android:label="@string/app_name"></activity>
     </application>
 

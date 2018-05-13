@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+
+    >
 
     <TextView
         android:id="@+id/taskName"
+        android:paddingLeft="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:gravity="left"
         android:text="TextView"
         android:textSize="22dp" />
 
@@ -16,17 +19,23 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
         <TextView
+            android:paddingLeft="10dp"
             android:id="@+id/duration"
             android:layout_width="0dp"
             android:layout_weight="0.5"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:gravity="center"
+            android:gravity="left"
             android:textSize="18dp"
             />
 
-        <TextView
+        <!--<TextView
             android:id="@+id/priority"
             android:layout_width="0dp"
             android:layout_weight="0.5"
@@ -34,16 +43,19 @@
             android:text="TextView"
             android:gravity="center"
             android:textSize="18dp"
-            />
+            />-->
+        <RatingBar
+            android:id="@+id/priority"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:max="5"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/date_time"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="12dp"
-        android:gravity="right"
-        />
 </LinearLayout>
